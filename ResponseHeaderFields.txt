@@ -1,0 +1,13 @@
+- Response Header Field
+	- Accept –Ranges
+	- Age – age of the response; cache resource to particular
+		age
+	-ETag – entity tag; soft/weak identifier for entity;
+		conditional request
+	- Location – redirection; (eg other methods)
+	- proxy-authenticate – enable authorization/
+		authenthication with HTML
+	- WWW -authenticate
+	- retry-after – can’t serve now, try again later on
+	- server – use indicate information about the server
+- vary

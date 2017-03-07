@@ -1,0 +1,12 @@
+- Entity Header Fields
+	- allow
+	- content – encoding
+	- content – language – request content; identify language
+	- content – length – bytes
+	- content – location – located the exact file
+	- content – MDS – deprecated; hashing algorithm; change
+		the content; hash value
+	- content-range – bytes 0-100; content range = 100
+	- content-type – text/html (kind of resource)
+	-expires – retrieve to another content; when to end
+	- last-modified – controlling the cache
