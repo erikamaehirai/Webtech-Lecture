@@ -1,0 +1,54 @@
+- HTTP Response Message
+	- status line (special line)
+	- HTTP protocol version
+	- reason phrase – descriptive
+	-status code – case of failure (numeric)
+	- status code
+- 1xx (informational)
+	- 100 continue
+	- 101 switching protocols – request to switch using
+	upgrade; protocol negotiation
+- 2xx (success)
+	- 200 ok
+	- 201 created
+	- 202 accepted (not process but accepted)
+	-203 non authoritative information
+	- 204 no content
+	- 205 reset content (submit data via POST)
+	- 206 partial content
+- 3xx (redirection) (location: )
+	- 300 multiple choices – request with several version
+	- 301 moved permanently – no longer there
+	- 302 found (redirection)
+	- 303 see other (redirection)
+	- 304 not modified – conditional but has missing
+	- 305 use proxy – don’t fetch it directly
+	- 306 (unused)
+	- 307 temporary redirect
+- 4xx (client error)
+	- 400 bad request
+	- 401 unauthorized (protected)
+	- 402 payment required (commercial application)
+	- 403 forbidden (not allowed to access)
+	- 404 not found (not correct request)
+	- 405 method not allowed
+	- 406 not acceptable
+	- 407 proxy authentication required
+	- 408 request timeout
+	- 409 conflict
+	- 410 gone (none)
+	- 411 length required
+	- 412 precondition failed
+	- 413 request entity too large
+	- 414 request URI too large
+	- 415 unsupported media type
+	- 416 requested range not satisfiable
+	- 417 expectation failed
+- 426 upgrade required ( 3000 characters)
+- 5xx (server error)
+	- 500 internal server error
+	- 501 not implemented
+	- 502 bad gateway (cot configure)
+	- 503 service unavailable
+	- 504 gateway time-out
+	- 505 http version not supported
