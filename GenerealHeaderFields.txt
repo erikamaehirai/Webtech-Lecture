@@ -1,0 +1,13 @@
+- General Header Fields
+	- cache – control – request/response; local storage to put
+		resources (eg. Browser, gateways); no cache, max-age = 0
+	- connection – establish persistent connections; (eg. keepalive:
+		timeout=5, max=100; close)
+	- data – indicate when your transfer the resource
+	- pragma – generic directive
+	- transfer encoding
+	- trailer – list of header
+	- upgrade – switching to a different
+		- h2 – http v.2; h2c – https v.2
+	- via – walkthrough
+	- warning – errors
