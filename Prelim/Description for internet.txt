@@ -9,10 +9,40 @@ Internet is the short term for "Internetwork". It is also defined as the "Networ
 	2. IPv6 - 128 bits long
 	
 History of the Internet
-
-
-	
-	
+1960 - Modem, the first dataphone was introduced by AT&T.
+1961 - On March 31,1961, Leonard Kleinrock published a paper entitled "Information Flow in Large Communication Nets".
+1962 - Kleinrock released a paper about packetization.
+     - The transmission of data using fixed size message blocks was suggested by Paul Baran.
+     - JCR Licklider became the first director of IPTO and he also gave his vision of a galactic network.
+1964 - The report "On Distributed Communications" was published by Baran.
+     - Kleinrock published his first book about packet nets entitled "Communication Nets: Stochastic Message Flow and Design".
+1965 - Lawrence G. Roberts performed the first long distance dial-up connection from Massachusetts with Tom Marill who is based in California.
+     - the word "Packet" was coined by Donald Davies.
+1966 - Roberts and Marill published a paper regarding the success of the dial-up connection that they made.
+     - Robert Taylor joined ARPA and he brought in Larry Roberts to develop the ARPANET.
+1967 - The 1-node NPL packet net was created by Donald Davies.
+     - The use of a minicomputer for network packet switch was suggested by Wes Clark.
+1968 - On June 3, 1968, Larry Roberts published the ARPANET program plan.
+1969 - On April 7, 1969, the first RFC was published and it contains Host-to-Host introductory and about IMP software.
+     - UCLA introduced the Internet on July 3, 1969.
+     - The first data was sent from UCLA host to IMP switch on September 2, 1969.
+     - The first commercial online service named "CpmpuServe" was established.
+1970 - Steve Crocker together with UCLA released the NCP.
+1971 - Ray Tomlinson sent the first electronic mail.
+1972 - ARAPANET's first public demo.
+1973 - The Very first Voice over Internet Protocol(VoIP) call was made.
+1974 - Telnet was introduced and it was considered to be the first Internet Service Provider(ISP).
+1981 - Because It's There Network(BITNET) was founded.
+1983 - TCP/IP was standardized by ARPANET.
+1984 - DNS was introoduced by Mockapetris and Postel.
+1989 - Tim Berners-Lee submitted a proposal at CERN on MArch 12, 1989 and the proposal would become the World Wide Web(WWW).
+1991 - The WWW was introduced on August 6, 1991 by Tim Berners-Lee.
+1994 - W3C(World Wide Web Consortium) was established and was headed by Tim Berners-Lee on October 1994.
+1995 - dot com (.com) started.
+     - SSL protocol was developed by Netscape on February 1995.
+     - Microsoft release the Microsoft Internet Explorer on August 16, 1995.
+     - HTML 2.0 was introduced in RFC 1866 on November 24, 1995.
+     - Java was introduced by Sun Microsystems and it also announced the JavaScript on December 4, 1995. 
 
 
 
