@@ -43,7 +43,16 @@ History of the Internet
      - Microsoft release the Microsoft Internet Explorer on August 16, 1995.
      - HTML 2.0 was introduced in RFC 1866 on November 24, 1995.
      - Java was introduced by Sun Microsystems and it also announced the JavaScript on December 4, 1995. 
-
+1996 - Macromedia Falsh was introduced and it is now known as Adobe Flash.
+     - CSS1 was published by W3C in December 1996.
+1997 - Internet2 consortium was established.
+     - IEEE released the 802.11 network which we all know as the WIFI.
+1998 - the Internet Weblogs begins.
+     - XML becomes a recommendation for W3C.
+2003 - the SAFARI browser was released by Apple on June 30, 2003.
+2004 - Mozilla Firefox was established on November 9, 2004.
+2008 - Google Chrome was released by Google on December 11, 2008.
+2014 - HTML5 was introduced to the public on October 28, 2014 by W3C.
 
 
 
