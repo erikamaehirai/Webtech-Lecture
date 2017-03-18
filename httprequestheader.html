@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Webtech </title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> HTTP Message Headers </h1>
+<h2>Request Header Field </h2>
+<table>
+  <tr>
+    <th>Request Header Field Name</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>Accept</td>
+    <td>Content type that are accepable for the response</td>
+    <td>Accept: text/plain</td>
+  </tr>
+  <tr>
+    <td>Accept-Language</td>
+    <td>Human languages for response</td>
+    <td>Accept-Language: en-US</td>
+  </tr>
+  <tr>
+    <td>Accept-Charset</td>
+    <td>Character sets that are acceptable.</td>
+    <td>Accept-Charset: utf-8</td>
+  </tr>
+  <tr>
+    <td>Authorization</td>
+    <td>Authentication credentials for HTTP </td>
+    <td>Authorization: BASIC Z3Vlc3Q6Z3Vlc3QxMjM=</td>
+  </tr>
+  <tr>
+    <td>Proxy-Authorization</td>
+    <td>Authorization credentials for connecting to proxy</td>
+    <td>Proxy-Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</td>
+  </tr>
+  <tr>
+    <td>Expect</td>
+    <td>Indicates that particular server behaviors are required by the client.</td>
+    <td>Expect: 100-continue</td>
+  </tr>
+  <tr>
+    <td>From</td>
+    <td>email address of the user making the request.</td>
+    <td>From: user@example.com</td>
+  </tr>
+  <tr>
+    <td>Host</td>
+    <td>Domain name of the server</td>
+    <td>Host: www.slu.edu.ph</td>
+  </tr>
+  <tr>
+    <td>If-Match</td>
+    <td>If the client supplied an entity matches the same entity on the server</td>
+    <td>If-Match: "xyzzy", "r2d2xxxx", "c3piozzzz"</td>
+  </tr>
+  <tr>
+  <td>If-None-Match</td>
+    <td>if one of the given value in this tag matches the given entity tags represented by ETag.</td>
+    <td>If-None-Match: "xyzzy"</td>
+  </tr>
+   <tr>
+    <td>If-Modified-Since</td>
+    <td>Only send the response if the entity has been modified since a specific time</td>
+    <td>If-Modified-Since: Sun, 19 Mar 2017 19:43:31 GMT</td>
+  </tr>
+  <tr>
+    <td>If-Unmodified-Since</td>
+    <td>Only send the response if the entity has not been modified since a specific time.</td>
+    <td>If-Unmodified-Since: Sun, 19 Mar 2017 19:43:31 GMT</td>
+  </tr>
+  <tr>
+    <td>If-Range</td>
+    <td>Partial Content</td>
+    <td>If-Range: Sun, 19 Mar 2017 19:43:31 GMT</td>
+  </tr>
+  <tr>
+    <td>Max-Forwards</td>
+    <td>Control where the trace has to be clone</td>
+    <td>Max-Forwards: 10</td>
+  </tr>
+  <tr>
+    <td>Transfer-Encoding</td>
+    <td>Indicates what extension transfer-coding it is willing to accept in the response</td>
+    <td>TE: deflate</td>
+  </tr>
+  <tr>
+    <td>User-Agent</td>
+    <td>Identify the request</td>
+    <td>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)</td>
+  </tr>
+  <tr>
+    <td>Referer</td>
+    <td>Address of the previous web page from which a link to the currently requested page was followed. </td>
+    <td>Referer: http://www.webtek.org/http/index.htm</td>
+  </tr>
+</table>
+</body>
+</html>
