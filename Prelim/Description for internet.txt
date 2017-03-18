@@ -1,14 +1,19 @@
 What is the meaning of Internet?
 
-Internet is the short term for "Internetwork". It is also defined as the "Network of Networks". The Internet connects millions of people around the
-	world and is used mostly for communication and accessing information. Every person that is using the internet has a unique Internet Protocol(IP) address 
+	Internet is the short term for "Internetwork". It is also defined as the "Network of Networks". The Internet connects millions of people around the
+	world and is used mostly for communication and accessing information. Computers can connect with each other as long as they are connected to the
+	Internet. The informations that travel through the internet via variety of languages that are called Protocols. 
+
+	Every person that is using the internet has a unique Internet Protocol(IP) address 
 	- unique numbers that are used to identify each computer that is connected to the Internet Protocol that are communicating in a network.
 
 	Versions of IP Address
 	1. IPv4 - 32 bits long
 	2. IPv6 - 128 bits long
+
 	
 History of the Internet
+
 1960 - Modem, the first dataphone was introduced by AT&T.
 1961 - On March 31,1961, Leonard Kleinrock published a paper entitled "Information Flow in Large Communication Nets".
 1962 - Kleinrock released a paper about packetization.
