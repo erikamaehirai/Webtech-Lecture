@@ -1,0 +1,30 @@
+
+ article ul {
+    list-style-type: none;
+  }
+  article li:before {
+    content: " - ";
+  }
+
+article img {
+height: 150px;
+position: relative;
+float: left; 
+margin: 0 9px 3px 0;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
