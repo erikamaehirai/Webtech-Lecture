@@ -12,6 +12,9 @@ ul.dashed > li:before {
   text-indent: -5px;
 }
 
+#statuscode li {
+list-style-type: circle;
+}
 article img {
 height: 150px;
 position: relative;
