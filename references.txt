@@ -1,0 +1,15 @@
+What is The Web (World Wide Web)?
+Beal, V. (n.d.). Web - World Wide Web. Retrieved March 20, 2017, from http://www.webopedia.com/TERM/W/World_Wide_Web.html
+
+HTTP Methods
+HTTP Methods: GET vs. POST. (n.d.). Retrieved March 20, 2017, from https://www.w3schools.com/tags/ref_httpmethods.asp
+
+HTTP
+Beal, V. (n.d.). HTTP - HyperText Transfer Protocol. Retrieved March 20, 2017, from http://www.webopedia.com/TERM/H/HTTP.html
+
+HTTP Resource Addressing
+The TCP/IP Guide - World Wide Web Addressing: HTTP Uniform Resource Locators (URLs). (n.d.). Retrieved March 20, 2017, from http://www.tcpipguide.com/free/t_WorldWideWebAddressingHTTPUniformResourceLocatorsU.htm
+
+HTTP Versions
+HTTP 1.0 vs 1.1. (n.d.). Retrieved March 20, 2017, from http://stackoverflow.com/questions/246859/http-1-0-vs-1-1
+
