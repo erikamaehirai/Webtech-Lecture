@@ -1,37 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-</head>
-	
-<nav>
-	<ul class="course">
-		<li> <a href="#"> Home </a></li>
-		<li> <a class="dropdown" href="#"> Prelims </a>
-		<ul> 
-			<a href="#internet.html"> Internet </a>
-			<a href="#www.html"> WWW </a>
-			<a href="#http.html"> HTTP </a>
-		</ul>
-		</li>
-		<li> <a class="dropdown" href="#"> Midterms </a> </li>
-		<li> <a class="dropdown" href="#"> Finals </a> </li>	
-	</ul>	
-</nav>
-	
-	
-<body>
-	<div class="abouthttp">
-		<div id="http">
-			<article>
-       <h1> Hypertext Transfer Protocol </h1>   
-<p> Hypertext Transfer Protocol is an application layer communication protocol used to access resources.It works as a request-response protocol between a client and server. It runs on the top of the Internet Protocol Suite (TCP/IP) where port 8O is the default port for TCP and port 443 for HTTPS(over SSL/TLS)  </p>
+<!DOCTYPE HTML>
+<html>
+<div class="header">
+<link rel="stylesheet" type="text/css" href="style.css">   
+        <nav>
+            <ul class="cf">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="dropdown" href="#">Prelims</a>
+                    <ul>
+                        <a href="internet.html">Internet</a>
+                        <a href="www.html">WWW</a>
+                        <a href="http.html">HTTP</a>
+                    </ul>
+                    </li>
+                <li><a class="dropdown" href="#">Midterms</a>
+                    <ul>
+                        <a href="smooth.html">...</a>
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                    </ul>
+                </li>
+                <li><a href="#">Finals</a>
+                    <ul>
+                        <a href="smooth.html">...</a>
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </div>
 <br>
+        
+<div id="content1">
+    <p>Hypertext Transfer Protocol</p>
+    <p>(HTTP)</p>
+</div>
+
+<div id="content11">
+    <h3>Hypertext Transfer Protocol</h3>
+    <br>
+    <p> Hypertext Transfer Protocol is an application layer communication protocol used to access resources.It works as a request-response protocol between a client and server. It runs on the top of the Internet Protocol Suite (TCP/IP) where port 8O is the default port for TCP and port 443 for HTTPS(over SSL/TLS)  
+    </p>
+</div>
+
+<div id="content12">
 <h2>HTTP Versions</h2>
+<br>
 <h3> HTTP 1.0 </h3>
 <ul>
- <li>RFC 1945 - May 1996 </li>
+<li>RFC 1945 - May 1996 </li>
+<br>
 </ul>
 
 <h3>HTTP 1.1 </h3>
@@ -40,31 +60,30 @@
 <li>RFC 2616 - June 1999 </li>
 <li>RFC 7230-7235 - June 2014)</li>
 </ul>
-
+<br>
 <h3> HTTP 2 </h3>
 <ul>
 <li> RFC 7540 - May 2015 </li>
-</ul>  
-</article>
+</ul>
+<br>
 <article>
-<img src="images/web-server.png" alt="web">
 <h2> Web Server </h2>
 <ul>
 <li> hosts web resources </li> 
 <li> collection of web pages fetching the document </li>
 <li> Web server software (e.g. Apache, IIS, NGINX, Lighttpd) usually is used to deliver content and most of times it runs on servers located in data centers. Web client is an application (e.g. Internet Explorer, Firefox, Chrome, Safari, Opera) running on a local device (desktop, notebook, cell phone) used to interact mainly with Web servers even though you can use your Web client to access servers running protocols others than HTTP and HTTPS. </li>
 </ul>
+<br>
 </article>
 <article>
-<img src="images/web-browser-icon-65892.png" alt="web" />
 <h2> Web Client </h2>
 <li> access the resource fetching the document in the web server </li>
 <li> lets the user request something on the server, and shows the user the result of the request.</li>
-
+<br>
 <h3>Port Number</h3>
 <li>0 - 64K</li>
 <li>identify which app should receive a message</li>
-
+<br>
 <h3>* IANA </h3>
 <li>Internet Assigned Numbers Authority</li>
 <li>manages the IP Addresss space allocations globally</li>
@@ -72,29 +91,29 @@
 <h3> *ICANN </h3>
 <li>Internet Corporation for Assigned Numbers</li>
 <li>a non-profit organization for coordinating the maintenance and procedures of several databases</li>
+<br>
 </article>
 <article>
 <h2> Client Server Architecture </h2>
-<img src="images/client-server.png">
-
-	<h3>Client (User Agent) </h3>
+<br>
+<h3>Client (User Agent) </h3>
+<br>
 <li>web browser</li>
 <li>e.g. web crawler/spider, other user end tool and application</li>
 
-	<h3>Server</h3>
+<h3>Server</h3>
 <li>origin server, proxy server, gateways, tunnels</li>
-
+<br>
+<br>
 <h1> HTTP uses stateless communication protocols </h1>
 <p> A stateless protocol does not require the server to keep information about clients in between requests. HTTP which is the foundation of the data communication in WWWW, multiple requests can be sent over the same HTTP connection, the server does not attach any special meaning to their arriving over the same socket. 
 </p>
 </article>
-			
-		</div>
-		
-		<div id="reqmethods">
-			<h1>HTTP Request Methods</h1>
-
-			<h3>GET </h3>
+<br>
+<br>
+<h2>HTTP Request Methods</h2>
+<br>
+<h3>GET </h3>
 <li> It is used to request from the server about the retrieval of the source being identified by the request URl and it is returned as an entity in the message body</li>
  <li>It is used to transfer a current selected representation of the resource</li>
 <br>
@@ -123,13 +142,14 @@
 <br>
 <h3>CONNECT</h3>
 <li> Reserved for use of tunneling proxy servers</li>
+</div> 
+  
+<div id="content13">
+    <div id="messageheaders">
 		
-		</div>
-		
-		<div id="messageheaders">
-		
-		<h1> HTTP Message Headers </h1>
-		<h2>General Header Field </h2>
+<h1> HTTP Message Headers </h1>
+<br>
+<h2>General Header Field </h2>
 <table>
   <tr>
     <th>Message Header Field Name</th>
@@ -193,7 +213,7 @@ Connection: Upgrade
     <td>Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1)</td>
   </tr>
 </table>
-			
+<br>	
 	<h2> Response Header Field </h2>
 <table>
 	  <tr>
@@ -250,7 +270,7 @@ Connection: Upgrade
 		<td>vary
 		</tr>
 </table>
-		
+	<br>	
 	<h2>Request Header Field </h2>
 <table>
   <tr>
@@ -344,7 +364,7 @@ Connection: Upgrade
     <td>Referer: http://www.webtek.org/http/index.htm</td>
   </tr>
 </table>
-			
+		<br>	
 		<h2>Entity Header Fields </h2>
 <table>
   <tr>
@@ -405,10 +425,10 @@ Connection: Upgrade
 </table>
 		
 		</div>
-		
+    <br>
 	<div id="statuscodes">
 		<h1> HTTP Status Codes </h1>
-		
+		<br>
 		<h2> 1xx (informational) </h2>
 	<table>
 <tr>
@@ -427,6 +447,7 @@ Connection: Upgrade
 <td> a request using protocol negotiation for switching </td> 
 </tr>
 	</table>
+<br>
 <h2> 2xx (success) <h2>
 	<table>
 <tr>
@@ -476,7 +497,7 @@ Connection: Upgrade
 <td>will return content that are not complete</td> 
 </tr>
 	</table>
-
+<br>
 	<h2> 3xx (redirection) </h2>
 	<table>
 <tr>
@@ -532,7 +553,7 @@ Connection: Upgrade
 <td>repeated using a url but does not allow http to change</td> 
 </tr>
 	</table>
-
+<br>
 	<h2> 4xx (client error) </h2>
 	<table>
 <tr>
@@ -648,9 +669,7 @@ Connection: Upgrade
 </tr>
 
 	</table>
-
-
-
+<br>
 	<h2> 5xx (server error)</h2>
 	<table>
 <tr>
@@ -695,10 +714,8 @@ Connection: Upgrade
 </tr>
 		
 		</table>
-		
-		</div>
-	
-	
-	</div>
-	</body>
+</div>
+
+    
 </html>
+    
