@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Webtech </title>
-<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
+	
+<nav>
+	<ul class="course">
+		<li> <a href="#"> Home </a></li>
+		<li> <a class="dropdown" href="#"> Prelims </a>
+		<ul> 
+			<a href="#internet.html"> Internet </a>
+			<a href="#www.html"> WWW </a>
+			<a href="#http.html"> HTTP </a>
+		</ul>
+		</li>
+		<li> <a class="dropdown" href="#"> Midterms </a> </li>
+		<li> <a class="dropdown" href="#"> Finals </a> </li>	
+	</ul>	
+</nav>
+	
+	
 <body>
-    
-    
-
-
- <article>
+	<div class="abouthttp">
+		<div id="http">
+			<article>
        <h1> Hypertext Transfer Protocol </h1>   
 <p> Hypertext Transfer Protocol is an application layer communication protocol used to access resources.It works as a request-response protocol between a client and server. It runs on the top of the Internet Protocol Suite (TCP/IP) where port 8O is the default port for TCP and port 443 for HTTPS(over SSL/TLS)  </p>
 <br>
 <h2>HTTP Versions</h2>
-<p> HTTP 1.0 </p>
+<h3> HTTP 1.0 </h3>
 <ul>
  <li>RFC 1945 - May 1996 </li>
 </ul>
 
-<p>HTTP 1.1 </p>
+<h3>HTTP 1.1 </h3>
 <ul>
 <li>RFC 2068 - January 1997 </li>
 <li>RFC 2616 - June 1999 </li>
 <li>RFC 7230-7235 - June 2014)</li>
 </ul>
 
-<p> HTTP 2 </p>
+<h3> HTTP 2 </h3>
 <ul>
 <li> RFC 7540 - May 2015 </li>
 </ul>  
@@ -46,34 +60,645 @@
 <h2> Web Client </h2>
 <li> access the resource fetching the document in the web server </li>
 <li> lets the user request something on the server, and shows the user the result of the request.</li>
-</article>
 
-Port Number
+<h3>Port Number</h3>
 <li>0 - 64K</li>
 <li>identify which app should receive a message</li>
 
-* IANA 
+<h3>* IANA </h3>
 <li>Internet Assigned Numbers Authority</li>
 <li>manages the IP Addresss space allocations globally</li>
 
-*ICANN 
+<h3> *ICANN </h3>
 <li>Internet Corporation for Assigned Numbers</li>
 <li>a non-profit organization for coordinating the maintenance and procedures of several databases</li>
 </article>
 <article>
-<h2> CLIENT SERVER ARCHITECTURE </h2>
+<h2> Client Server Architecture </h2>
 <img src="images/client-server.png">
 
-Client (User Agent)
+	<h3>Client (User Agent) </h3>
 <li>web browser</li>
 <li>e.g. web crawler/spider, other user end tool and application</li>
 
-Server
+	<h3>Server</h3>
 <li>origin server, proxy server, gateways, tunnels</li>
 
 <h1> HTTP uses stateless communication protocols </h1>
 <p> A stateless protocol does not require the server to keep information about clients in between requests. HTTP which is the foundation of the data communication in WWWW, multiple requests can be sent over the same HTTP connection, the server does not attach any special meaning to their arriving over the same socket. 
 </p>
 </article>
-</body>
+			
+		</div>
+		
+		<div id="reqmethods">
+			<h1>HTTP Request Methods</h1>
+
+			<h3>GET </h3>
+<li> It is used to request from the server about the retrieval of the source being identified by the request URl and it is returned as an entity in the message body</li>
+ <li>It is used to transfer a current selected representation of the resource</li>
+<br>
+<h3>HEAD</h3>
+<li>Identical to GET, except the message body is not included in the response </li>
+ <li>It is used to retrieve metadata about the entity implied by request without transferring the entity itself.</li>
+<br>
+<h3>POST</h3>
+<li> Request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line. </li>
+ <li>It is more appropriate than Get Method </li>
+ <li>It perform resource - specific processing of the entities enclosed in the message body</li>
+<br>
+<h3>OPTIONS</h3>
+<li>Request for information about the communication options available on the request/response chain identified by the Request-URI. </li>
+<br>
+<h3>TRACE</h3>
+<li> Request a loop back of the request message </li>
+<li>i.e. request the server to “echo” back to the client the received request </li>
+<li>Typically used for testing/diagnostics of the request</li>
+<br>
+<h3>PUT</h3>
+<li> Request the server to store the enclosed entity in the message under the specified request URI </li>
+<br>
+<h3>DELETE </h3>
+<li>Request the server to delete the resource identified by the request URI </li>
+<br>
+<h3>CONNECT</h3>
+<li> Reserved for use of tunneling proxy servers</li>
+		
+		</div>
+		
+		<div id="messageheaders">
+		
+		<h1> HTTP Message Headers </h1>
+		<h2>General Header Field </h2>
+<table>
+  <tr>
+    <th>Message Header Field Name</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>Cache Control</td>
+    <td>Request/response; local storage to put resources (eg. Browser, gateways)</td>
+    <td>Cache-Control: no-cache</td>
+  </tr>
+  <tr>
+    <td>Connection</td>
+    <td>establish persistent connections</td>
+    <td>Connection: keep-alive
+    <br>
+    Connection: Upgrade
+    <br>
+    Connection: keep-alive
+Connection: Upgrade
+</td>
+  </tr>
+  <tr>
+    <td>Date</td>
+    <td>Response was generated</td>
+    <td>Sun, 06 Nov 1994 08:49:37 GMT  ; RFC 822, updated by RFC 1123</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Pragma</td>
+    <td>generic directive</td>
+    <td>Pragma: no-cachea</td>
+  </tr>
+  <tr>
+    <td>Trailer</td>
+    <td>list of header</td>
+    <td>Trailer: Max-Forwards</td>
+  </tr>
+  <tr>
+    <td>Transfer-Encoding</td>
+    <td>Used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity.</td>
+    <td>Transfer-Encoding: chunked</td>
+  </tr>
+  <tr>
+    <td>Upgrade</td>
+    <td>Ask the server to upgrade to another protocol.</td>
+    <td>Upgrade: HTTP/2.0, SHTTP/1.3, IRC/6.9, RTA/x11</td>
+  </tr>
+  <tr>
+    <td>Via</td>
+    <td>Informs the server of proxies through which the request was sent.</td>
+    <td>Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1)</td>
+  </tr>
+  <tr>
+  <td>Warning</td>
+    <td>Informs the server of proxies through which the request was sent.</td>
+    <td>Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1)</td>
+  </tr>
+</table>
+			
+	<h2> Response Header Field </h2>
+<table>
+	  <tr>
+    <th>Request Header Field Name</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+	<tr>
+	<td>Accept 
+	<td>Ranges
+		</tr>
+		
+	<tr>	
+	<td>Age 
+	<td>age of the response
+	<td>cache resource to particular
+		</tr>
+		
+	<tr>	
+	<td>ETag 
+	<td>entity tag
+	<td>soft/weak identifier for entity; conditional request
+		</tr>
+		
+	<tr>	
+	<td>Location 
+	<td>redirection
+	<td>other methods
+		</tr>
+		
+	<tr>	
+	<td>proxy
+	<td>authenticate
+	<td>enable authorization/authenthication with HTML
+	</tr>
+				
+	<tr>			
+	<td>WWW 
+	<td>authenticate
+	</tr>
+			
+		<tr>	
+		<td>retry
+		<td>after 
+		<td>can’t serve now, try again later on
+		</tr>
+					
+		<tr>			
+		<td>server 
+		<td>use indicate information about the server
+		</tr>
+				
+		<tr>		
+		<td>vary
+		</tr>
+</table>
+		
+	<h2>Request Header Field </h2>
+<table>
+  <tr>
+    <th>Request Header Field Name</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>Accept</td>
+    <td>Content type that are accepable for the response</td>
+    <td>Accept: text/plain</td>
+  </tr>
+  <tr>
+    <td>Accept-Language</td>
+    <td>Human languages for response</td>
+    <td>Accept-Language: en-US</td>
+  </tr>
+  <tr>
+    <td>Accept-Charset</td>
+    <td>Character sets that are acceptable.</td>
+    <td>Accept-Charset: utf-8</td>
+  </tr>
+  <tr>
+    <td>Authorization</td>
+    <td>Authentication credentials for HTTP </td>
+    <td>Authorization: BASIC Z3Vlc3Q6Z3Vlc3QxMjM=</td>
+  </tr>
+  <tr>
+    <td>Proxy-Authorization</td>
+    <td>Authorization credentials for connecting to proxy</td>
+    <td>Proxy-Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</td>
+  </tr>
+  <tr>
+    <td>Expect</td>
+    <td>Indicates that particular server behaviors are required by the client.</td>
+    <td>Expect: 100-continue</td>
+  </tr>
+  <tr>
+    <td>From</td>
+    <td>email address of the user making the request.</td>
+    <td>From: user@example.com</td>
+  </tr>
+  <tr>
+    <td>Host</td>
+    <td>Domain name of the server</td>
+    <td>Host: www.slu.edu.ph</td>
+  </tr>
+  <tr>
+    <td>If-Match</td>
+    <td>If the client supplied an entity matches the same entity on the server</td>
+    <td>If-Match: "xyzzy", "r2d2xxxx", "c3piozzzz"</td>
+  </tr>
+  <tr>
+  <td>If-None-Match</td>
+    <td>if one of the given value in this tag matches the given entity tags represented by ETag.</td>
+    <td>If-None-Match: "xyzzy"</td>
+  </tr>
+   <tr>
+    <td>If-Modified-Since</td>
+    <td>Only send the response if the entity has been modified since a specific time</td>
+    <td>If-Modified-Since: Sun, 19 Mar 2017 19:43:31 GMT</td>
+  </tr>
+  <tr>
+    <td>If-Unmodified-Since</td>
+    <td>Only send the response if the entity has not been modified since a specific time.</td>
+    <td>If-Unmodified-Since: Sun, 19 Mar 2017 19:43:31 GMT</td>
+  </tr>
+  <tr>
+    <td>If-Range</td>
+    <td>Partial Content</td>
+    <td>If-Range: Sun, 19 Mar 2017 19:43:31 GMT</td>
+  </tr>
+  <tr>
+    <td>Max-Forwards</td>
+    <td>Control where the trace has to be clone</td>
+    <td>Max-Forwards: 10</td>
+  </tr>
+  <tr>
+    <td>Transfer-Encoding</td>
+    <td>Indicates what extension transfer-coding it is willing to accept in the response</td>
+    <td>TE: deflate</td>
+  </tr>
+  <tr>
+    <td>User-Agent</td>
+    <td>Identify the request</td>
+    <td>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)</td>
+  </tr>
+  <tr>
+    <td>Referer</td>
+    <td>Address of the previous web page from which a link to the currently requested page was followed. </td>
+    <td>Referer: http://www.webtek.org/http/index.htm</td>
+  </tr>
+</table>
+			
+		<h2>Entity Header Fields </h2>
+<table>
+  <tr>
+    <th>Entity Header Field Name</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>Allow</td>
+    <td>Valid methods for a specified resource</td>
+    <td>Allow: GET, HEAD</td>
+  </tr>
+  <tr>
+    <td>Content-Encoding</td>
+    <td>To allow the document to be compressed without losing the identity of its underlying media type.</td>
+    <td>Content-Encoding: gzip</td>
+  </tr>
+  <tr>
+    <td>Content-Language</td>
+    <td>Languages of the intended audience for the enclosed content</td>
+    <td>Content-Language: mi, en</td>
+  </tr>
+  <tr>
+    <td>Content-Length</td>
+    <td>The length of the response body</td>
+    <td>Content-Length: 3495</td>
+  </tr>
+  <tr>
+    <td>Content-Location</td>
+    <td>An alternate location for the returned data</td>
+    <td>Content-Location: /index.htm</td>
+  </tr>
+  <tr>
+    <td>Content-MD5</td>
+    <td>Providing an end-to-end message integrity check</td>
+    <td>RContent-MD5  : 8c2d46911f3f5a326455f0ed7a8ed3b3</td>
+  </tr>
+  <tr>
+    <td>Content-Range</td>
+    <td>Sent with partial entity</td>
+    <td>Content-Range : bytes 0-499/1234</td>
+  </tr>
+  <tr>
+    <td>Content-Type</td>
+    <td>Indicates the media-type of the entity body sent to the recipient</td>
+    <td>Content-Type: text/html; charset=utf-8</td>
+  </tr>
+  <tr>
+    <td>Expires</td>
+    <td>Gives the date/time after which the response is considered stale</td>
+    <td>Expires: Mon, 20 Mar 2017 16:00:00 GMT</td>
+  </tr>
+  <tr>
+  <td>Last-Modified</td>
+    <td>Indicates the time and date at which the origin in server believes the variant was last modified</td>
+    <td>Last-Modified: Sun, 19 Mar 2017 12:45:26 GMT</td>
+  </tr>
+</table>
+		
+		</div>
+		
+	<div id="statuscodes">
+		<h1> HTTP Status Codes </h1>
+		
+		<h2> 1xx (informational) </h2>
+	<table>
+<tr>
+    <th>Status Codes</th>
+<th> Name </th>
+    <th>Description</th>
+  </tr>
+<tr>
+<td> 100  </td>
+<td> continue</td>
+<td> a server will check the headers of the request </td> 
+</tr>
+<tr>
+<td> 101 </td>
+<td> switching protocols  </td>
+<td> a request using protocol negotiation for switching </td> 
+</tr>
+	</table>
+<h2> 2xx (success) <h2>
+	<table>
+<tr>
+    <th>Status Codes</th>
+<th> Name </th>
+    <th>Description</th>
+  </tr>
+<tr>
+<td> 200  </td>
+<td>ok </td>
+<td>successful http request</td> 
+</tr>
+
+<tr>
+<td> 201 </td>
+<td> created </td>
+<td>request has been fulfilled</td> 
+</tr>
+
+<tr>
+<td> 202 </td>
+<td> accepted</td>
+<td>the process has not been completed but it is accepted</td> 
+</tr>
+
+<tr>
+<td> 203 </td>  
+<td>non authoritative information </td>
+<td>not definitive</td> 
+</tr>
+
+<tr>
+<td> 204 </td>  
+<td>no content </td>
+<td> it will not return any content but it is processed successfully</td> 
+</tr>
+
+<tr>
+<td> 205 </td>
+<td>reset content (submit data via POST) </td>
+<td>requires for a reset of the document view</td> 
+</tr>
+
+<tr>
+<td> 206 </td>  
+<td> partial content </td>
+<td>will return content that are not complete</td> 
+</tr>
+	</table>
+
+	<h2> 3xx (redirection) </h2>
+	<table>
+<tr>
+    <th>Status Codes</th>
+<th> Name </th>
+    <th>Description</th>
+  </tr>
+<tr>
+<td> 300  </td>
+<td> multiple choices</td>
+<td> giving a request with several versions</td> 
+</tr>
+
+<tr>
+<td> 301 </td>
+<td> moved permanently</td>
+<td>it is no longer in the request</td> 
+</tr>
+
+<tr>
+<td> 302 </td>
+<td>found </td>
+<td>requires a client to perform a temporary redirect</td> 
+</tr>
+
+<tr>
+<td> 303</td>
+<td>see other </td>
+<td>uses the GET method to find the request under another URl</td> 
+</tr>
+
+	
+<tr>
+<td> 304</td>
+<td> not modified</td>
+<td>conditional but has missing</td> 
+</tr>
+
+	<tr>
+<td> 305 </td>
+<td>use proxy </td>
+<td>does not fetch it directly</td> 
+</tr>
+
+<tr>
+<td> 306  </td>
+<td>switch proxy </td>
+<td>it is no longer used</td> 
+</tr>
+<tr>
+<td> 307</td>
+<td>temporary redirect</td>
+<td>repeated using a url but does not allow http to change</td> 
+</tr>
+	</table>
+
+	<h2> 4xx (client error) </h2>
+	<table>
+<tr>
+    <th>Status Codes</th>
+<th> Name </th>
+    <th>Description</th>
+  </tr>
+<tr>
+<td> 400 </td>
+<td>bad request </td>
+<td>the server will not process the request due to an error of the client</td> 
+</tr>
+
+<tr>
+<td> 401 </td>
+<td>unauthorized (protected) </td>
+<td>used when authentication is required and has failed or has not yet been provided</td> 
+</tr>
+
+<tr>
+<td> 402</td>
+<td>payment required </td>
+<td>reserved for future use</td> 
+</tr>
+
+<tr>
+<td> 403 </td>
+<td>forbidden  </td>
+<td>not allowed to access</td> 
+</tr>
+
+<tr>
+<td> 404 </td>
+<td>not found </td>
+<td>not correct request</td> 
+</tr>
+
+<tr>
+<td> 405 </td>
+<td> method not allowed</td>
+<td>a request method is not supported for the requested resource</td> 
+</tr>
+
+<tr>
+<td> 406  </td>
+<td>not acceptable </td>
+<td>requested resource is generating only the content</td> 
+</tr>
+
+<tr>
+<td> 407  </td>
+<td>proxy authentication required </td>
+<td>the client must first authenticate with the proxy</td> 
+</tr>
+
+<tr>
+<td> 408</td>
+<td> request timeout</td>
+<td>server timed out while waiting for the request</td> 
+</tr>
+
+<tr>
+<td>409</td>
+<td> conflict </td>
+<td>request could not be processed because of the conflict </td> 
+</tr>
+
+<tr>
+<td> 410</td>
+<td> gone</td>
+<td>resource requested will not be available again</td> 
+</tr>
+
+<tr>
+<td> 411 </td>
+<td>length required </td>
+<td>request did not specify the length of its content</td> 
+</tr>
+
+<tr>
+<td> 412 </td>
+<td>precondition failed </td>
+<td>server does not meet one of the preconditions </td> 
+</tr>
+
+<tr>
+<td> 413 </td>
+<td>request entity too large </td>
+<td>request is larger than the server is able to process</td> 
+</tr>
+
+<tr>
+<td> 414 </td>
+<td> request URI too large</td>
+<td> URI provided was too long and the server is not able to process it</td> 
+</tr>
+
+<tr>
+<td> 415</td>
+<td>unsupported media type </td>
+<td>request entity has a media type which the resource does not support</td> 
+</tr>
+
+<tr>
+<td> 416 </td>
+<td> requested range not satisfiable</td>
+<td>the client has asked for a portion of the file but the server is not capable of supplying that portion</td> 
+</tr>
+<tr>
+<td> 417</td>
+<td> expectation failed</td>
+<td>the request was not met by the server</td> 
+</tr>
+
+	</table>
+
+
+
+	<h2> 5xx (server error)</h2>
+	<table>
+<tr>
+    <th>Status Codes</th>
+<th> Name </th>
+    <th>Description</th>
+  </tr>
+<tr>
+<td> 500</td>
+<td> internal server error</td>
+<td>a generic error message</td> 
+</tr>
+
+<tr>
+<td>501</td>
+<td>not implemented </td>
+<td>indicates future availability of the request</td> 
+</tr>
+
+<tr>
+<td>502</td>
+<td> bad gateway</td>
+<td>proxy received an invalid response from the upstream server</td> 
+</tr>
+
+<tr>
+<td> 503 </td>
+<td> service unavailable</td>
+<td>a temporary state </td> 
+</tr>
+
+<tr>
+<td> 504</td>
+<td> gateway time-out</td>
+<td>gateway and did not receive a timely response from the upstream server></td> 
+</tr>
+
+<tr>
+<td> 505</td>
+<td> http version not supported</td>
+<td>the HTTP protocol version used in the request is not supported by the server</td> 
+</tr>
+		
+		</table>
+		
+		</div>
+	
+	
+	</div>
+	</body>
 </html>
