@@ -13,3 +13,5 @@ The TCP/IP Guide - World Wide Web Addressing: HTTP Uniform Resource Locators (UR
 HTTP Versions
 HTTP 1.0 vs 1.1. (n.d.). Retrieved March 20, 2017, from http://stackoverflow.com/questions/246859/http-1-0-vs-1-1
 
+Http Header Fields
+HTTP/1.1: Header Field Definitions. (n.d.). Retrieved March 20, 2017, from https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html
