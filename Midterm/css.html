@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+What is CSS?
+-Cascading Style Shee or CSS is a language used to specify the presentation aspects of structurally marked up documents.
+-It is also used to format the colors,fonts, and backgrounds of html files.
+-It is developed by Håkon Wium Lie and Bert Bos.
+
+Versions of CSS:
+CSS 1
+CSS 2
+CSS 2.1
+CSS 3
+
+I. CSS Statements
+-a statement in CSS is either an at-rule or rule set.
+
+At-Rules
+
+The @charset at-rule can be used to specify the character encoding of an external style sheet. It must appear before anything else in the file.
+
+The @import at-rule allows us to import one style sheet into another. All @import at-rules must appear before any rules.
+
+The @media at-rule lets us target rules to the media types we specify.
+
+The @page at-rule can be used to specify margins for paged media. You can set different margins for left- and right-hand pages when you’re printing double-sided pages, as well as for the first page.
+
+The @font-face at-rule allows us to specify custom fonts.
+
+The @namespace at-rule in CSS3 lets us declare an XML namespace, as well as an optional prefix with which that namespace can be specified.
+
+The @document CSS at-rule restricts the style rules contained within it based on the URL of the document.
+
+The @keyframes CSS at-rule controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence. 
+
+Rule Sets
+-selectors followed by a brased enclosed declaration block.
+
+
+II. CSS Selectors
+- selects the content that you want to put a stye in.
+
+SIMPLE SELECTORS
+-Type selectors
+-Universal selectors(*)
+-Class selectors
+-ID selectors(#)
+-Attribute selectors - [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+
+COMBINATORS
+-Descendant Combinator
+-Child Combinator
+-Sibling Combinator
+	-Adjacent Sibling Combinator
+	-General Sibling Combinator
+-Pseudo-Elements
+::after (:after)
+::backdrop
+::before (:before)
+::first-letter (:first-letter)
+::first-line (:first-line)
+::selection
+
+PSEUDO-CLASSES
+-Dynamic Pseudo-Class
+	-Link Pseudo-Class
+	 :link
+	 :visited
+	-User Action Pseudo-Class
+	 :hover
+	 :active
+	 :focus
+-Target Pseudo-Class
+ :target
+-Language Pseudo-Class
+ :lang()
+-UI Element States Pseudo-Class
+ :enabled
+ :disabled
+ :checked
+ :indeterminate
+-Structural Pseudo-Class
+ :root
+ :first-child
+ :last-child
+ :only-child
+ :nth-child()
+ :nth-last-child()
+ :nth-last-of-type()
+ :nth-of-type()
+ :first-of-type
+ :last-of-type
+ :only-of-type
+ :empty
+-Negation Pseudo-Class
+ :not()
+ 
+ 
+III. CSS Rule Precedence
+-BY ORIGIN and IMPORTANCE
+	-user agent important declarations
+	-user important declaration
+	-author important declaration
+	-author normal declaration
+	-user normal declaration
+	-user agent normal declaration
+	-important override declaration
+	-animation declaration
+-BY SPECIFICITY
+	-inline style
+	-number of ID selectors
+	-number of class selectors,attribute selectors and pseudo-classes
+	-number of type selectors and pseudo-elements
+-BY ORDER
+	-the later the code it would e the priority
+	
+
+IV. CSS Declarations
+-Properties
+	-shorthand properties
+	-vendor specific extensions(aka. vendor prefixes)
+-Values
+	-keywords
+	-numbers(integers and reals in decimal notation)
+	-dimensions
+		-length,angle,duration,frequency,resolution
+		-length units:
+			-font-relative: em,ex,ch,rem
+			-view-port percentage: vw,vh,vmin,vmax
+			-absolute lengths; cm,mm,q,in,pt,pc,px
+		-angle units: deg,grad,rad,turn
+		-duration units: s,ms
+		-frequency units: hz,khz
+		-resolution units: dpi,dpcm,dppx
+		-percentages
+		-URL's and URI's
+		-colors
+		-strings
+		-functions  
+			-calc()
+			-attr()
+			-counters()
+			-linear-gradient()
+			-radial-gradient()
+			-translate()
+			-scale()
+			-rotate()
+			
+V. CSS Preprocessors and CSS Frameworks
+-CSS Pre-processors extend CSS with variables, operators, interpolations, functions, mixins and many more other usable assets
+Examples:
+	-SASS
+	-LESS
+	-Stylus
+	-CSS-Crush
+	-Myth
+	-Rework
+	
+-CSS Frameworks extends the capability of CSS.
+Examples:
+	-Bootstrap
+	-W3.CSS
+	-960 CSS Framework
+	-Blueprint CSS Framework
+	-The jQuery UI CSS Framework
+	-YAML
+	-Yahoo YUI Grids CSS
+	
+</body>
+</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
