@@ -18,20 +18,19 @@ tr:nth-child(even) {
 }
 </style>
 </head>
-
 <body>
-
 	<h1>What is CSS?</h1>
 <p><strong>Cascading Style Sheet</strong>  is a language used to specify the presentation aspects of structurally marked up documents.
 	It is also used to format the colors,fonts, and backgrounds of html files.
 	It is developed by Håkon Wium Lie and Bert Bos.</p>
 
 	<h2>Versions of CSS</h2>
+	<ul>
 		<li>CSS 1</li>
 		<li>CSS 2</li>
 		<li>CSS 2.1</li>
 		<li>CSS 3</li>
-
+	</ul>
 	<h2>I. CSS Statements</h2>
 	<p>a statement in CSS is either an at-rule or rule set.</p>
 
@@ -71,6 +70,7 @@ tr:nth-child(even) {
 		<td>The @keyframes CSS at</td>
 		<td>rule controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence. </td>
 	</tr>
+	</table>
 	<h3>Rule Sets</h3>
 	<p>selectors followed by a brased enclosed declaration block.</p>
 
@@ -85,8 +85,9 @@ tr:nth-child(even) {
 <li>ID selectors(#)</li>
 <li>Attribute selectors - [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]</li>
 
-<ul>	
+	
 <h3>COMBINATORS</h3>
+<ul>
 <li>Descendant Combinator</li>
 <li>Child Combinator</li>
 <li>Sibling Combinator</li>
@@ -154,79 +155,99 @@ tr:nth-child(even) {
  </ul>
 </ul>
  
-III. CSS Rule Precedence
--BY ORIGIN and IMPORTANCE
-	-user agent important declarations
-	-user important declaration
-	-author important declaration
-	-author normal declaration
-	-user normal declaration
-	-user agent normal declaration
-	-important override declaration
-	-animation declaration
--BY SPECIFICITY
-	-inline style
-	-number of ID selectors
-	-number of class selectors,attribute selectors and pseudo-classes
-	-number of type selectors and pseudo-elements
--BY ORDER
-	-the later the code it would e the priority
-	
+<h2>III. CSS Rule Precedence</h2>
+	<h3>BY ORIGIN and IMPORTANCE</h3>
+	<ul>
+		<li>user agent important declarations
+		<li>user important declaration
+		<li>author important declaration
+		<li>author normal declaration
+		<li>user normal declaration
+		<li>user agent normal declaration
+		<li>important override declaration
+		<li>animation declaration
+	</ul>
+	<h3>BY SPECIFICITY</h3>
+	<ul>
+		<li>inline style</li>
+		<li>number of ID selectors</li>
+		<li>number of class selectors,attribute selectors and pseudo-classes</li>
+		<li>number of type selectors and pseudo-elements</li>
+	</ul>
+	<h3>BY ORDER</h3>
+	<ul>
+		<li>the later the code it would e the priority</li>
+	</ul>
 
-IV. CSS Declarations
--Properties
-	-shorthand properties
-	-vendor specific extensions(aka. vendor prefixes)
--Values
-	-keywords
-	-numbers(integers and reals in decimal notation)
-	-dimensions
-		-length,angle,duration,frequency,resolution
-		-length units:
-			-font-relative: em,ex,ch,rem
-			-view-port percentage: vw,vh,vmin,vmax
-			-absolute lengths; cm,mm,q,in,pt,pc,px
-		-angle units: deg,grad,rad,turn
-		-duration units: s,ms
-		-frequency units: hz,khz
-		-resolution units: dpi,dpcm,dppx
-		-percentages
-		-URL's and URI's
-		-colors
-		-strings
-		-functions  
-			-calc()
-			-attr()
-			-counters()
-			-linear-gradient()
-			-radial-gradient()
-			-translate()
-			-scale()
-			-rotate()
+	<h2>IV. CSS Declarations</h2>
+
+	<h3>Properties</h3>
+	<ul>
+	<li>shorthand properties</li>
+	<li>vendor specific extensions(aka. vendor prefixes)</li>
+	</ul>
+<h3>Values</h3>
+	<ul>
+	<li>keywords</li>
+	<li>numbers(integers and reals in decimal notation)</li>
+	<li>dimensions</li>
+	
+		<ul>
+		<li>length,angle,duration,frequency,resolution</li>
+		<li>length units:</li>
+			<ul>
+			<li>font-relative: em,ex,ch,rem</li>
+			<li>view-port percentage: vw,vh,vmin,vmax</li>
+			<li>absolute lengths; cm,mm,q,in,pt,pc,px</li>
+			</ul>
+			</ul>
+		<li>angle units: deg,grad,rad,turn</li>
+		<li>duration units: s,ms</li>
+		<li>frequency units: hz,khz</li>
+		<li>resolution units: dpi,dpcm,dppx</li>
+		<li>percentages</li>
+		<li>URL's and URI's</li>
+		<li>colors</li>
+		<li>strings</li>
+		<li>functions</li>
+		<ul>
+			<li>calc()</li>
+			<li>attr()</li>
+			<li>counters()</li>
+			<li>linear-gradient()</li>
+			<li>radial-gradient()</li>
+			<li>translate()</li>
+			<li>scale()</li>
+			<li>rotate()</li>
+		</ul>
+	</ul>
 			
-V. CSS Preprocessors and CSS Frameworks
--CSS Pre-processors extend CSS with variables, operators, interpolations, functions, mixins and many more other usable assets
-Examples:
-	-SASS
-	-LESS
-	-Stylus
-	-CSS-Crush
-	-Myth
-	-Rework
+	<h2>V. CSS Preprocessors and CSS Frameworks</h2>
+<h3>CSS Pre-processors extend CSS with variables, operators, interpolations, functions, mixins and many more other usable assets</h3>
+	<h4>Examples:</h4>
+	<ul>
+	<li>SASS</li>
+	<li>LESS</li>
+	<li>Stylus</li>
+	<li>CSS-Crush</li>
+	<li>Myth</li>
+	<li>Rework</li>
+	</ul>
 	
--CSS Frameworks extends the capability of CSS.
-Examples:
-	-Bootstrap
-	-W3.CSS
-	-960 CSS Framework
-	-Blueprint CSS Framework
-	-The jQuery UI CSS Framework
-	-YAML
-	-Yahoo YUI Grids CSS
-	
+	<h3>CSS Frameworks extends the capability of CSS.</h3>
+	<h4>Examples:</h4>
+	<ul>
+	<li>Bootstrap</li>
+	<li>W3.CSS</li>
+	<li>960 CSS Framework</li>
+	<li>Blueprint CSS Framework</li>
+	<li>The jQuery UI CSS Framework</li>
+	<li>YAML</li>
+	<li>Yahoo YUI Grids CSS</li>
+	</ul>
+
 </body>
 </html>
-	
 	
 	
 	
