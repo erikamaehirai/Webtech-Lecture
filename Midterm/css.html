@@ -49,10 +49,12 @@
 <h1> CSS Versions </h1>
 
 <h2>CSS 1 </h2>
+	<li> December 17, 1996 revised April 11, 2008</li>
 <h2>CSS 2 </h2>
 <li>A superset of CSS 1, CSS 2 includes a number of new capabilities like absolute, relative, and fixed positioning of elements and z-index, the concept of media types, support for aural style sheets and bidirectional text, and new font properties such as shadows.</i>
 <h2> CSS 2.1 </h2>
-<li>CSS 2.1 is a style sheet language that allows authors and users to attach style (e.g., fonts and spacing) to structured documents </li>
+	<li> June 07, 2011 </li>
+	<li>CSS 2.1 is a style sheet language that allows authors and users to attach style (e.g., fonts and spacing) to structured documents </li>
 <h2>CSS 3 </h2>
 <li> Media Queries - Responsive Design </li>
 
@@ -64,42 +66,42 @@
 
 	<h3>At-Rules</h3>
 <table>
-	<th>At-Rules</th>
+	<th>@-Rules</th>
 	<th>Description</th>
 	<tr>
-		<td>The @charset at</td>
+		<td>The @charset</td>
 		<td>rule can be used to specify the character encoding of an external style sheet. It must appear before anything else in the file.</td>
 	</tr>
 	<tr>
-		<td>The @import at</td>
+		<td>The @import</td>
 		<td>rule allows us to import one style sheet into another. All @import at-rules must appear before any rules.</td>
 	</tr>
 	<tr>
-		<td>The @media at</td>
+		<td>The @media</td>
 		<td>rule lets us target rules to the media types we specify.</td>
 	</tr>
 	<tr>
-		<td>The @page at</td>
+		<td>The @page</td>
 		<td>rule can be used to specify margins for paged media. You can set different margins for left- and right-hand pages when you’re printing double-sided pages, as well as for the first page.</td>
 	</tr>
 	<tr>
-		<td>The @fontface at</td>
+		<td>The @fontface</td>
 		<td>rule allows us to specify custom fonts.</td>
 	</tr>
 	<tr>
-		<td>The @namespace at</td>
+		<td>The @namespace</td>
 		<td>rule in CSS3 lets us declare an XML namespace, as well as an optional prefix with which that namespace can be specified.</td>
 	</tr>
 	<tr>
-		<td>The @document CSS at</td>
+		<td>The @document</td>
 		<td>rule restricts the style rules contained within it based on the URL of the document.</td>
 	</tr>
 	<tr>
-		<td>The @keyframes CSS at</td>
+		<td>The @keyframes</td>
 		<td>rule controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence. </td>
 	</tr>
 	</table>
-	<h3>Rule Sets</h3>
+	<h3>Rule Sets (aka CSS Rules, Style Rules)</h3>
 	<p>selectors followed by a brased enclosed declaration block.</p>
 </div>
  <div id="content12">
@@ -107,21 +109,38 @@
 	<p>selects the content that you want to put a stye in.</p>
 
 	<h3>SIMPLE SELECTORS</h3>
-	<li>-Type selectors</li>
+	<li>Type selectors</li>
 <li>Universal selectors(*)</li>
 <li>Class selectors</li>
 <li>ID selectors(#)</li>
-<li>Attribute selectors - [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]</li>
-
+	 <li>Attribute selectors</li>
+	 <ul>
+		 <li> [attr]</li>
+		 <li> [attr=value] </li>
+		 <p> Specific Value </p>
+		 <li> [attr~=value] </li>
+		 <p> one value out of set of several values </p>
+		 <li> [attr|=value] </li>
+		 <p> Language attribute; value = something </p>
+		 <li> [attr^=value] </li>
+		 <p> and </p>
+		 <li> [attr$=value] </li>
+		 <p> dollar </p>
+		 <li> [attr*=value]</li>
+		 <p> anywhere</p>
+	 </ul>
 	
 <h3>COMBINATORS</h3>
 <ul>
 <li>Descendant Combinator</li>
+	<ul>
+		<li> whitespace</li>
+	</ul>
 <li>Child Combinator</li>
 <li>Sibling Combinator</li>
 	<ul>
-	<li>Adjacent Sibling Combinator</li>
-	<li>General Sibling Combinator</li>
+	<li>Adjacent Sibling Combinator(+)</li>
+	<li>General Sibling Combinator(~)</li>
 	</ul>
 <li>Pseudo-Elements</li>
 <li>::after (:after)</li>
@@ -187,14 +206,15 @@
 <h2>III. CSS Rule Precedence</h2>
 	<h3>BY ORIGIN and IMPORTANCE</h3>
 	<ul>
-		<li>user agent important declarations
-		<li>user important declaration
-		<li>author important declaration
-		<li>author normal declaration
-		<li>user normal declaration
-		<li>user agent normal declaration
-		<li>important override declaration
-		<li>animation declaration
+		<li>user agent important declarations</li>
+		<li>user important declaration</li>
+		<li>author important declaration</li>
+		<li>author normal declaration</li>
+		<li>user normal declaration</li>
+		<li>user agent normal declaration</li>
+		<li> transition declaration</li>
+		<li>important override declaration</li>
+		<li>animation declaration</li>
 	</ul>
 	<h3>BY SPECIFICITY</h3>
 	<ul>
@@ -214,12 +234,13 @@
 	<h3>Properties</h3>
 	<ul>
 	<li>shorthand properties</li>
-	<li>vendor specific extensions(aka. vendor prefixes)</li>
+	<li>vendor</li>
+		<p> specific extensions(aka. vendor prefixes)</p>
 	</ul>
 <h3>Values</h3>
 	<ul>
-	<li>keywords</li>
-	<li>numbers(integers and reals in decimal notation)</li>
+	<li>keywords,numbers,dimensions</li>
+	<p>numbers(integers and reals in decimal notation)</p>
 	<li>dimensions</li>
 	
 		<ul>
@@ -230,16 +251,17 @@
 			<li>view-port percentage: vw,vh,vmin,vmax</li>
 			<li>absolute lengths; cm,mm,q,in,pt,pc,px</li>
 			</ul>
-			</ul>
 		<li>angle units: deg,grad,rad,turn</li>
 		<li>duration units: s,ms</li>
 		<li>frequency units: hz,khz</li>
 		<li>resolution units: dpi,dpcm,dppx</li>
+		</ul>
 		<li>percentages</li>
 		<li>URL's and URI's</li>
 		<li>colors</li>
 		<li>strings</li>
 		<li>functions</li>
+		<li>background-color</li>
 		<ul>
 			<li>calc()</li>
 			<li>attr()</li>
@@ -254,7 +276,8 @@
 	</div>
 <div id = "content12">			
 	<h2>V. CSS Preprocessors and CSS Frameworks</h2>
-<h3>CSS Pre-processors extend CSS with variables, operators, interpolations, functions, mixins and many more other usable assets</h3>
+	<h3>CSS Pre-processors </h3>
+	<p>extend CSS with variables, operators, interpolations, functions, mixins and many more other usable assets</p>
 	<h4>Examples:</h4>
 	<ul>
 	<li>SASS</li>
@@ -280,6 +303,6 @@
    
 </div>
 
-    
+</body>    
 </html>
     
