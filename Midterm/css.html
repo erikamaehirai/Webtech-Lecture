@@ -145,12 +145,12 @@
 			<p>Syntax: element ~ element { style properties }</p>
 	</ul>
 <li>Pseudo-Elements</li>
-<p>::after (:after)</p>
-<p>::backdrop</p>
-<p>::before (:before)</p>
-<p>::first-letter (:first-letter)</p>
-<p>::first-line (:first-line)</p>
-<p>::selection</p>
+<p>::after (:after) - Insert something after the content of each <p> element (e.g., p::after)</p>
+<p>::backdrop - used to create a backdrop that hides the underlying document for an element in the top layer's stack</p>
+<p>::before (:before) - (e.g, p::before) Insert something before the content of each <p> element </p>
+<p>::first-letter (::first-letter)- (e.g., p::first-letter) Selects the first letter of every <p> element    </p>
+<p>::first-line (::first-line) - (e.g., p::first-line) Selects the first line of every <p> element</p>
+<p>::selection - (e.g., ::selection) Selects the portion of an element that is selected by a user</p>
 </ul>
 	<h3>PSEUDO-CLASSES</h3>
 <ul>
@@ -158,49 +158,49 @@
 <ul>
 	<li>Link Pseudo-Class</li>
 	 <ul>
-	 <li>:link</li>
-	 <li>:visited</li>
+	 <li>:link - (e.g., a:link) Selects all unvisited links</li>
+	 <li>:visited - (e.g., a:visited) Selects all visited links</li>
 	 </ul>
 </ul>
 	<li>User Action Pseudo-Class</li>
 	<ul>
-	 <li>:hover</li>
-	 <li>:active</li>
-	 <li>:focus</li>
+	 <li>:hover - (e.g., a:hover) Selects links on mouse over</li>
+	 <li>:active - (e.g, a:active) Selects the active link</li>
+	 <li>:focus - (e.g., input:focus) Selects the input element which has focus</li>
 	 </ul>
 <li>Target Pseudo-Class</li>
 <ul>
- <li>:target</li>
+ <li>:target - (e.g., #news:target) Selects the current active #news element (clicked on a URL containing that anchor name)</li>
  </ul>
 <li>Language Pseudo-Class</li>
 <ul>
- <li>:lang()</li>
+ <li>:lang() - (e.g., p:lang(it)) Selects the current active #news element (clicked on a URL containing that anchor name)</li>
  </ul>
 <li>UI Element States Pseudo-Class</li>
 <ul>
- <li>:enabled</li>
- <li>:disabled</li>
- <li>:checked</li>
+ <li>:enabled - (e.g., input:enabled) Selects every enabled <input> element</li>
+ <li>:disabled - (e.g., input:disabled) Selects every disabled <input> element</li>
+ <li>:checked - (e.g., input:checked) Selects every checked <input> element</li>
  <li>:indeterminate</li>
  </ul>
 <li>Structural Pseudo-Class</li>
  <ul>
- <li>:root</li>
- <li>:first-child</li>
- <li>:last-child</li>
- <li>:only-child</li>
- <li>:nth-child()</li>
- <li>:nth-last-child()</li>
- <li>:nth-last-of-type()</li>
- <li>:nth-of-type()</li>
- <li>:first-of-type</li>
- <li>:last-of-type</li>
- <li>:only-of-typev
- <li>:empty</li>
+ <li>:root - Selects the document's root element</li>
+ <li>:first-child - (e.g., p:first-child) Selects every <p> element that is the first child of its parent</li>
+ <li>:last-child - (e.g., p:last-child) Selects every <p> element that is the last child of its parent</li>
+ <li>:only-child - (e.g./ p:only-child) Selects every <p> element that is the only child of its parent</li>
+ <li>:nth-child() - (e.g., p:nth-child(2)) Selects every <p> element that is the second child of its parent</li>
+ <li>:nth-last-child() - (e.g., p:nth-child(2)) Selects every <p> element that is the second child of its parent</li>
+ <li>:nth-last-of-type() - (e.g., p:nth-last-of-type(2)) Selects every <p> element that is the second <p> element of its parent, counting from the last child</li>
+ <li>:nth-of-type()- (e.g., p:nth-of-type(2)) Selects every <p> element that is the second <p> element of its parent </li> 
+ <li>:first-of-type- (e.g., p:first-of-type) Selects every <p> element that is the first <p> element of its parent</li> 
+ <li>:last-of-type - (e.g., p:last-of-type) Selects every <p> element that is the last <p> element of its parent</li>
+ <li>:only-of-type - (e.g., p:only-of-type) Selects every <p> element that is the only <p> element of its parent </li>
+ <li>:empty - (e.g., p:empty) 	Selects every <p> element that has no children (including text nodes)</li>
  </ul>
 <li>Negation Pseudo-Class</li>
 <ul>
- <li>:not()</li>
+ <li>:not() - (e.g., :not(p)) Selects every element that is not a <p> element</li>
  </ul>
 </ul>
 </div>
@@ -265,14 +265,14 @@
 		<li>functions</li>
 		<li>background-color</li>
 		<ul>
-			<li>calc()</li>
-			<li>attr()</li>
-			<li>counters()</li>
-			<li>linear-gradient()</li>
-			<li>radial-gradient()</li>
-			<li>translate()</li>
-			<li>scale()</li>
-			<li>rotate()</li>
+			<li>calc() - Allows you to perform calculations to determine CSS property values</li>
+			<li>attr() - Returns the value of an attribute of the selected element</li>
+			<li>counters() - insert a string between different levels of nested counters</li>
+			<li>linear-gradient() - Creates an "image" which represents a linear gradient of colors</li>
+			<li>radial-gradient() - Creates an "image" which represents a gradient of colors radiating from the center of the gradient</li>
+			<li>translate() - moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).</li>
+			<li>scale() - increases or decreases the size of an element (according to the parameters given for the width and height).		 </li>
+			<li>rotate() - rotates an element clockwise or counter-clockwise according to a given degree.</li>
 		</ul>
 	</ul>
 	</div>
