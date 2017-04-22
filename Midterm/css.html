@@ -133,22 +133,24 @@
 <h3>COMBINATORS</h3>
 <ul>
 <li>Descendant Combinator</li>
-	<ul>
-		<li> whitespace</li>
-	</ul>
+	<p>Syntax: selector1 selector2 { /* property declarations */ } or selector1 >> selector2 { /* property declarations */ }</p>
+	<p>whitespace</p>
 <li>Child Combinator</li>
+	<p>Syntax: selector1 > selector2 { style properties } </p>
 <li>Sibling Combinator</li>
 	<ul>
-	<li>Adjacent Sibling Combinator(+)</li>
-	<li>General Sibling Combinator(~)</li>
+		<li>Adjacent Sibling Combinator(+)</li>
+			<p>Syntax: former_element + target_element { style properties } </p>
+		<li>General Sibling Combinator(~)</li>
+			<p>Syntax: element ~ element { style properties }</p>
 	</ul>
 <li>Pseudo-Elements</li>
-<li>::after (:after)</li>
-<li>::backdrop</li>
-<li>::before (:before)</li>
-<li>::first-letter (:first-letter)</li>
-<li>::first-line (:first-line)</li>
-<li>::selection</li>
+<p>::after (:after)</p>
+<p>::backdrop</p>
+<p>::before (:before)</p>
+<p>::first-letter (:first-letter)</p>
+<p>::first-line (:first-line)</p>
+<p>::selection</p>
 </ul>
 	<h3>PSEUDO-CLASSES</h3>
 <ul>
