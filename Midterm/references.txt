@@ -1,0 +1,5 @@
+Elements of CSS
+CSS Selector Reference. (n.d.). Retrieved April 22, 2017, from https://www.w3schools.com/cssref/css_selectors.asp
+
+Elements of HTML
+Index of Elements . (n.d.). Retrieved April 22, 2017, from https://www.w3.org/TR/html4/index/elements.html
