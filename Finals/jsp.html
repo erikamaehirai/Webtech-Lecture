@@ -81,6 +81,79 @@
 <li> SQL Tags </li>
 <li> XML Tags </li>
 <li>JSTL Functions </li>
+	
+	<div id="content1">
+<ul>
+<li> Motivation</li>
+	<ul>
+	<li> Separate business logic from presentation concern </li>
+		<ul>
+		<li> Allows modern web development teams to be divided up into programmers and web page authors / designers </li>
+			<li> Fosters component reuse (e.g. the same data object can be consumed by user agents of varying capabilities and needs) </li>
+		</ul>
+	<li> Servlets can be very powerful for programming business logic, but are very awkward to use when generating static (i.e. template) content.  </li>	
+		<li> (X)HTML marked-up documents are very convenient for static content generation but cannot be used to program business logic (or generate dynamic content arising from data produced by the business logic). </li>
+	</ul>
+	<li> Features </li>
+	<ul>
+	<li> Text-based document capable of generating both static and dynamic content (typically intermixed) </li>
+		<li>	Mark-up based document syntax (JSP-style or XML-style), combining (X) HTML elements as well as standard and custom JSP elements; thus, web page authors can feel right “at home” with the mark-up syntax.</li>
+		<li> Embedded Java Coding support via “scriptlets”  </li>
+		<ul>
+	<li> "<%  %>" </li>	
+		</ul>
+	<li>Template text are converted into JSPWriter  </li>
+	</ul>
+	<li> Components</li>
+	<ul>
+	<li> Template (i.e. static) text </li>
+		<li> JSP elements</li>
+		<ul>
+		<li> Directives </li>
+			<ul>
+			<li>" <%@ page ContentType=”text/html” pageEncoding=”UTF-8” %> "</li>
+				<li> "<%@ page import=”java.util.Random” %> "</li>
+						<ul>
+							<li>autoFlush </li>
+							 <li>buffer </li>
+							 <li>contentType </li>
+							 <li>errorPage </li>
+							 <li>extends </li>
+							 <li>import </li>
+							 <li>info </li>
+							 <li>isELIgnored</li> 
+							 <li>isErrorPage </li>
+							 <li>isThreadSafe </li>
+							 <li>language </li>
+							<li>pageEncoding o session</li> 
+					</ul>
+				<li> "<%@ taglib uri=”http://java.sun.com/jsp/jstl/core” prefix=”c” %> "</li>
+					<ul>
+						<li>prefix </li> 
+						 <li>taglib </li> 
+						 <li>uri </li> 
+					</ul>
+						
+			</ul>
+		<li> Scripting Elements</li>
+			<ul>
+			<li> Declarations</li>
+				<ul>
+					<li>"<%! int a = 100; %>" </li>
+					<li> "<%! int square(int n) { return n*n ; } %>" </li>
+					</ul>
+			<li> Expressions </li>
+				<ul>
+				<li> "<% for(int i = 0; i < 10 ; i++) { out.println(i); } %> "</li>
+				</ul>
+				</ul>
+			
+		</ul>
+	</ul>
+</ul>
+
+
+</div>
 
 </body>
 </html>
