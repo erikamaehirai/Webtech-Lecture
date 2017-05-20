@@ -62,6 +62,55 @@
       <p>Browser send user auth cookies with request</p>
       <p>transaction will fulfilled</p>
       <p>Problem: cookies auth is insufficient when side effect occur</p>
-      
+ <h2>Web Servicce Security Concepts</h2>
+      <ol>
+        <li>Authentication</li>
+          <table>
+            <tr>Verfting the user is who she claims to be. A user's identtity is verified based on the  credentials presented by the user, such as:</tr>
+              <tr>1. Something one has, for example, credentials issued by a trusted authority as passport or smart card.</tr>
+              <tr>Something one knows, for example, password</tr>            
+          </table>
+          <li>Authorization(or acces Control)</li>
+          <table>
+            <tr>Granting acces to specific resources based on an authenticated user's entitlements. Entitlements are defined by one or several attributes. </tr>
+              <tr>An attribute is the property of characteristic of a user.</tr>
+          </table>
+          <li>Confidentiality, privacy</li>
+          <table>
+            <tr>Keeping information secret. Accesses a message, for example a Web service request or an email, as well as the identity of the sending and receiving parties in a confidential manner. Confidentiality and privacy can be achieved by encrypting the content of a message and obfuscating the sending and receiving parties' identities</tr>
+          </table>
+          <li>Integrity, non repudiation</li>
+          <table>
+            <tr>Making sure that a message remains unaltered during transit by having the sender digitally sign the message. A digital signature is used to validate the signature and provides non-repudiation. The timestamp in the signature prevents anyone from replaying this message after the expiration.</tr>
+          </table>
+          <li>Oracle Web Services Manager (WSM)</li>
+          <table>
+            <tr>is designed to define and implement Web services security in heterogeneous environments, including authentication, authorization, message encryption and decryption, signature generation and validation, and identity propagation across multiple Web services used to complete a single transaction.</tr>
+          </table>
+          <li>SSL</li>
+          <table>
+          <tr>provides a secure communication channel, however, when the data is not "in transit," the data is not protected. This makes the environment vulnerable to attacks in multi-step transactions.</tr>
+          </table>
+          <li>SAML</li>
+          <table>
+            <tr> is one of the most interesting security tokens because it supports both authentication and authorization. SAML is an open framework for sharing security information on the Internet through XML documents. </tr>
+          </table>
+          <li>Role-based</li>
+          <table>
+            <tr>Role-based security is based on the notion that a set of identities, known as principals, can be grouped into roles, and then a policy can be applied to each of the roles</tr>
+          </table>
+          <li>Identity based</li>
+          <table>
+            <tr>dentity Model enables you to manage claims and policies in order to authorize clients. With this approach, you can verify claims contained within the authenticated users' credentials. </tr>
+          </table>
+          <li>Username Token</li>
+          <table>
+            <tr>A username token carries basic authentication information such as a username and password. When a username token is used with an authentication-only policy, no private keys are used. When used in a policy that includes authentication and message protection, the keys required for message protection are required.</tr>
+          </table>
+          <li>Kerberos Token</li>
+          <table>
+          <tr>A Kerberos token is comprised of a binary authentication and session token. When a kerberos token is used with an authentication-only policy, no private keys are used. When used in a policy that includes authentication and message protection, the keys required for message protection are required.</tr>
+          </table>
+   </ol>
   </body>
   </html>
